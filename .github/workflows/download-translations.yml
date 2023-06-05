@@ -33,6 +33,7 @@ jobs:
 
       - uses: peter-evans/create-pull-request@v5
         with:
+          token: ${{ secrets.CREATE_PR_TOKEN }}
           title: Update translations
           branch: update-translations
           commit-message: update translations from localazy
